@@ -1,0 +1,31 @@
+{
+  "name": "painting-trader",
+  "version": "0.0.1",
+  "description": "Trade paintings with the help of Hyperledger Fabric",
+  "main": "./dist/index.js",
+  "bin": {
+    "event-cli": "./dist/index.js"
+  },
+  "scripts": {
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "pretest": "npm run lint",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "build:watch": "tsc -w"
+  },
+  "author": "Liam Grace",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@types/fs-extra": "^5.0.5",
+    "fabric-ca-client": "^2.0.0-snapshot.207",
+    "fabric-network": "^1.4.1-snapshot.34",
+    "fs-extra": "^7.0.1",
+    "yargs": "^13.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^11.12.0",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.4000"
+  }
+}
